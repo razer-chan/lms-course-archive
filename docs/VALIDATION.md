@@ -38,6 +38,7 @@ JavaScript 语法检查和离线 mock 通过，覆盖分页循环/页数上限/�
 - SKILL.md 的元数据和结构校验通过。
 - 本机 Codex 自带 skill-installer 接受 `skills/lms-course-archive` 目录；在临时位置复制后逐文件哈希匹配，没有修改用户已安装的 skills。
 - 文档使用相对路径，包内无个人机器路径、真实课程 ID、录播内容、密码或登录会话。
-- 仓库尚未发布，**未测试真实 GitHub URL 的远程下载与安装**。发布后使用实际目录链接再验证；本轮验证的是符合安装器要求的本地结构。
+- 已从公开 GitHub 仓库 `razer-chan/lms-course-archive` 的实际 skill 目录链接，通过 Codex 自带 skill-installer 下载并安装到独立临时目录；13 个 skill 文件与发布源逐文件 SHA-256 一致，三个 Python CLI 的 help 均运行成功。没有修改用户原来的 skills 安装。
+- 该验证覆盖 GitHub 下载、安装器目录选择与本地脚本可用性；不同接收者的浏览器工具和学校登录仍需按引导准备，未声称所有客户端都已完成网页登录测试。
 
 完整复测命令见 [开发说明](DEVELOPMENT.md)。

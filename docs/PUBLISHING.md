@@ -7,15 +7,12 @@
 直接分享下面的话术即可。若复制到你自己的仓库，请保留目录结构并相应替换链接。
 
 ```text
-这是一个把 LMS 课程资料和 Zoom 录播保存到本地的 skill。
-在 Codex 中发送：
+打开这个 README，复制开头整段指令发给 Codex：
+https://github.com/razer-chan/lms-course-archive#readme
 
-请用 skill-installer 安装这个 skill：
-https://github.com/razer-chan/lms-course-archive/tree/main/skills/lms-course-archive
-
-装好后给它你的课程链接，它会检查浏览器、需要时引导登录，
-下载可访问资料，按课程分类，并给你完整清单。
-录播优先官方字幕；无字幕保存原始音频，不转录。
+Codex 会先安装 skill，再检查浏览器工具，按需引导你配置浏览器连接、
+登录学校 LMS 和提供课程链接。之后它会分类保存课程资料和录播，
+给你总目录及缺失清单。官方字幕优先，无字幕存原音频，不转录。
 ```
 
 接收者不需要先知道 LTI、CDP 或 API。安装只是载入流程和脚本；浏览器控制能力和课程登录仍由接收者自己的环境提供。README 和 skill 会引导处理这些前置条件。
